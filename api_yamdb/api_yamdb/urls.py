@@ -1,5 +1,6 @@
 """YaMDb URL Configuration
 
+
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/3.0/topics/http/urls/
 Examples:
@@ -14,10 +15,11 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path
+from django.urls import path, include
 from django.views.generic import TemplateView
 
 urlpatterns = [
+    path('api/v1/', include('api.urls')),
     path('admin/', admin.site.urls),
     path(
         'redoc/',
