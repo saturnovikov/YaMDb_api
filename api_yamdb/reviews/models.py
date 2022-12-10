@@ -44,6 +44,7 @@ class User(AbstractUser):
         unique=True,
     )
     bio = models.TextField(
+        'Биография',
         blank=True,
     )
     role = models.CharField(
