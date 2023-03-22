@@ -42,23 +42,30 @@ YaMDB отправляет письмо с кодом подтверждения
 
 1. Клонировать репозитрий и перейти в него в командной строке:
 
-```$git clone https://github.com/AnastasiyaVysotskaya/api_yamdb```
-
-```$cd api_yamdb```
+```
+$git clone https://github.com/AnastasiyaVysotskaya/api_yamdb
+$cd api_yamdb
+```
 
 2. Создать и активировать виртуалье окружение:
 
-```$python -m venv venv```
-```$source venv/Scripts/activate```
+```
+$python -m venv venv
+$source venv/Scripts/activate
+```
 
 3. Установить зависимости из файла requirements.txt
-```$python -m pip install --upgrade pip```
-```$pip install -r requirements.txt```
+```
+$python -m pip install --upgrade pip
+$pip install -r requirements.txt
+```
 
 4. Выполнить минрации:
 
-```$python manage.py makemigrations```
-```$python manage.py migrate```
+```
+$python manage.py makemigrations
+$python manage.py migrate
+```
 
 5. Запустить проект:
 
